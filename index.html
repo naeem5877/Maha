@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Surprise Proposal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🌈 Will You Be My Forever? 🌟</h1>
+        <p>Dear Maha,</p>
+        <p>Visit this site to reveal a special message from me!</p>
+        <button id="revealMessageBtn" onclick="revealMessage()">Click to Reveal</button>
+        <div id="message" class="hidden">
+            <p>Life is full of surprises, and one of the best surprises for me has been getting to know you through our conversations.</p>
+            <p>Even though we haven't met in person, your kindness, intelligence, and sense of humor have made a significant impact on me.</p>
+            <p>I feel a connection with you, and I cherish the moments we've shared so far. I believe there's something special between us.</p>
+            <p>So, with excitement and hope, I want to ask: Would you be open to getting to know each other better and exploring what could be?</p>
+            <p>Click on the button above to reveal the rest of my message. I look forward to hearing from you!</p>
+            <button id="submitAnswerBtn" onclick="openPopup()">Submit Your Answer</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Do you make me your boyfriend?</p>
+            <div class="emoji">🙂</div>
+            <button class="accept-btn" onclick="acceptProposal()">Accept</button>
+            <button class="reject-btn" onclick="rejectProposal()">Reject</button>
+        </div>
+    </div>
+
+    <div id="accept-popup" class="popup">
+        <div class="popup-content">
+            <p>Congratulations! Looking forward to this wonderful journey together! 🎉</p>
+            <div class="emoji">😊</div>
+            <button class="chat-btn" onclick="openChat()">Chat with Naeem</button>
+            <button class="close-btn" onclick="closePopup('accept-popup')">Close</button>
+        </div>
+    </div>
+
+    <div id="reject-popup" class="popup">
+        <div class="popup-content">
+            <p>I understand. If you ever change your mind, I'll be here. 😔</p>
+            <button class="close-btn" onclick="closePopup('reject-popup')">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
